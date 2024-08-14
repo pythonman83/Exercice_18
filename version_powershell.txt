@@ -1,0 +1,9 @@
+function Sort-List {
+    param(
+        [int[]]$liste
+    )
+    return $liste | Sort-Object
+}
+
+# Test de la fonction
+Sort-List -liste @(4, 2, 1, 3)  # Affiche 1 2 3 4
